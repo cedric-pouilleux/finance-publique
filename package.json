@@ -4,11 +4,15 @@
     "build": "nuxi build",
     "dev": "nuxi dev",
     "postinstall": "nuxi prepare",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint ."
   },
   "devDependencies": {
+    "@nuxt/test-utils-edge": "^3.0.0-rc.8-27692155.9db2229",
+    "eslint": "^8.22.0",
+    "jsdom": "^20.0.0",
     "nuxt": "3.0.0-rc.8",
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.2",
+    "vitest": "^0.22.1"
   }
 }
