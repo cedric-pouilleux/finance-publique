@@ -1,5 +1,12 @@
 <template>
-  <Tutorial />
+  <div>
+    <h1>Bienvenu sur finance-publique.fr</h1>
+    <ul>
+      <li>
+        <router-link to="aides-familiales">Test</router-link>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script lang="ts">
