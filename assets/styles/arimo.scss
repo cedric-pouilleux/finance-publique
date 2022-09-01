@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Arimo";
+  src: local("Raleway-Bold"),
+  url("assets/fonts/Raleway/Raleway-Bold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Arimo";
+  src: local("Arimo-SemiBold"),
+  url("assets/fonts/Arimo/Arimo-SemiBold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Arimo";
+  src: local("Arimo-Medium"),
+  url("assets/fonts/Arimo/Arimo-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Arimo";
+  src: local("Arimo"),
+  url("assets/fonts/Arimo/Arimo-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Arimo";
+  src: local("Arimo-Italic"),
+  url("assets/fonts/Arimo/Arimo-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}

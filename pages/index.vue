@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtPage />
+    Working progress
   </div>
 </template>
 

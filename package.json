@@ -9,10 +9,20 @@
   },
   "devDependencies": {
     "@nuxt/test-utils-edge": "^3.0.0-rc.8-27692155.9db2229",
-    "eslint": "^8.22.0",
+    "@nuxtjs/eslint-config-typescript": "^11.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "eslint": "^8.23.0",
+    "eslint-plugin-vue": "^9.4.0",
     "jsdom": "^20.0.0",
     "nuxt": "3.0.0-rc.8",
+    "sass": "^1.54.5",
     "typescript": "^4.8.2",
+    "vite-plugin-eslint": "^1.8.1",
     "vitest": "^0.22.1"
+  },
+  "dependencies": {
+    "@nuxt-hero-icons/outline": "^1.0.1",
+    "@nuxt-hero-icons/solid": "^1.0.1"
   }
 }

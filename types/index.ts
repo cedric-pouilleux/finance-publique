@@ -1,4 +1,4 @@
-import { ComputedRef } from 'vue';
+import { ComputedRef } from 'vue'
 
 export type Childrens = {
     age: number;
@@ -19,12 +19,11 @@ export interface FamilyOptionalPayload {
 }
 
 export interface FamilyPayload {
-    salaries: number[];
-    childrens: Childrens[];
+    salaries?: number[];
+    childrens?: Childrens[];
 }
 
 export interface FamilyReturn {
     sum: ComputedRef<number>;
-    informations?: ComputedRef<string[]>;
     resume?: ComputedRef<string[]>;
 }
