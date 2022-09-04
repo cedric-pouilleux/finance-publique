@@ -97,4 +97,32 @@ h3 {
     list-style-type: circle;
   }
 }
+
+@media screen and (max-width:1280px) {
+  .family-allowance-details {
+    &__title {
+      padding: 0 8px;
+      display: block;
+
+      .separator {
+        display: none;
+      }
+
+      .price {
+        padding: 0;
+        margin: 0;
+      }
+
+      &-right {
+        justify-content: space-between;
+      }
+
+      h3 {
+        font-size: 1.2em;
+        padding: 0;
+        margin: 2px 0;
+      }
+    }
+  }
+}
 </style>

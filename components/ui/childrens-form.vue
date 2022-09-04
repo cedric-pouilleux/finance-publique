@@ -59,6 +59,7 @@ watch(childs, (newValue: Childrens) => {
     display: flex;
     width: auto;
     flex-wrap: wrap;
+
     button {
       margin: 8px;
       padding: 0 14px;

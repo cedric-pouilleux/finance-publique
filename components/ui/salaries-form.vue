@@ -41,8 +41,18 @@ watch(resources, () => {
 </script>
 
 <style scoped lang="scss">
-.salary-form__salary {
-  display: flex;
-  flex-wrap: wrap;
+.salary-form {
+  &__salary {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:1280px){
+  .salary-form {
+    &-infos {
+      padding: 0;
+    }
+  }
 }
 </style>

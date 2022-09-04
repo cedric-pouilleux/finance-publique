@@ -23,12 +23,14 @@
               @update:salaries="options.salaries = $event"
             />
           </div>
-          <h2>Vos enfants</h2>
-          <div class="grid-wrapper">
-            <childrens-form
-              :childrens="options.childrens"
-              @update:childrens="options.childrens = $event"
-            />
+          <div class="salary-form-childrens">
+            <h2>Vos enfants</h2>
+            <div>
+              <childrens-form
+                :childrens="options.childrens"
+                @update:childrens="options.childrens = $event"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -64,7 +66,6 @@ import { readdableRound } from '~/utils'
 
 useHead({
   title: 'Simulateur aides familiales',
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   charset: 'utf-8',
   meta: [
     {
@@ -104,10 +105,6 @@ const isolate = ref(false)
 </script>
 
 <style scoped lang="scss">
-.salary-form-infos {
-  padding: 20px;
-}
-
 .childrens-form__inner {
   margin-top: 20px;
 }
@@ -119,8 +116,6 @@ const isolate = ref(false)
 .total-price {
   font-weight: 600;
   border-radius: 6px;
-  border: 2px solid #ebebeb;
-  padding: 6px 12px;
   color: #333;
 }
 
@@ -133,10 +128,64 @@ const isolate = ref(false)
   .grid {
     &-wrapper {
       padding: 0 20px;
+      box-sizing: border-box;
       &__header {
         display: flex;
         column-gap: 12px;
+        padding: 0 10px;
         align-items: baseline;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:1280px){
+
+  .salary-form {
+    &-infos {
+      padding: 12px 0;
+    }
+    &-childrens {
+      h2 {
+        padding: 0 8px;
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  .container{
+    display: block;
+    width: 100%;
+
+    .column-title {
+      margin: 0 8px;
+      padding: 12px 0;
+      border-bottom: 1px solid #ebebeb;
+
+      .salary-form-infos {
+        padding: 0;
+      }
+    }
+
+    .grid {
+      &-wrapper {
+        width: 100%;
+        padding: 0;
+        &__header {
+          display: block;
+          h2 {
+            font-size: 1.2em;
+          }
+        }
+      }
+
+      &-right {
+        padding: 20px 0;
+        margin: 20px 0;
+      }
+
+      &-left {
+        width: 100%;
       }
     }
   }
