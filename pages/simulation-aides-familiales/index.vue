@@ -24,7 +24,6 @@
             />
           </div>
           <div class="salary-form-childrens">
-            <h2>Vos enfants</h2>
             <div>
               <childrens-form
                 :childrens="options.childrens"
